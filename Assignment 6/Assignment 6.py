@@ -56,3 +56,14 @@ knn_accuracy = accuracy_score(y_test, y_pred_knn)
 print("\nK-Nearest Neighbors Confusion Matrix:")
 print(knn_conf_matrix)
 print(f"KNN Accuracy: {knn_accuracy:.4f}")
+
+"""
+1. The dataset contains categorical variables that need to be converted into numerical form for modeling.
+2. The correlation heatmap indicates weak correlations between most variables, suggesting low multicollinearity.
+3. Logistic Regression achieved higher accuracy compared to K-Nearest Neighbors (k=3), making it a more suitable model for this dataset.
+4. The confusion matrix highlights that both models struggle with false positives and false negatives, indicating potential model improvement.
+5. K-Nearest Neighbors (k=3) had lower accuracy than Logistic Regression, likely due to the dataset's complexity and feature distribution.
+6. Future work could involve hyperparameter tuning or using other models like Decision Trees or Random Forest for better classification performance.
+"""
+
+
